@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cake Menu</title>
+    <link rel="icon" href="./media/cover.jpg" >
+    <link rel="stylesheet" href="./style/menu.css">
+      <!-- FontAwesome CDN LINk -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./style/nav.css">
+  <link rel="stylesheet" href="./style/footer.css">
+ 
+    
+</head>
+
+<body>
+<!-- Navbar -->
+<nav class="navbar">
+  <div class="logo">
+    <a href="index.html"><i class="fas fa-mug-hot fa-5x"></i> MHJ Cafe</a>
+  </div>
+
+  <!-- Navigation Links -->
+  <ul class="nav-links">
+    <li><a href="index.html" > Home</a></li>
+    <li class="dropdown ">
+      <a href="#">Category</a>
+      <ul class="dropdown-menu">
+        <li><a href="./Brevarages.html"><i class="fas fa-coffee"></i> Beverages</a></li>
+        <li><a href="./breads.html"><i class="fas fa-bread-slice"></i> Breads</a></li>
+        <li><a href="./icecream.html"><i class="fas fa-ice-cream"></i> Ice Creams</a></li>
+        <li class="active" ><a href="./cake.html"><i class="fas fa-birthday-cake"></i> Cakes</a></li>
+      </ul>
+
+    </li>
+    <li ><a href="./about.html"> About-us</a></li>
+    <li ><a href="./contact.html"> Contact-us</a></li>
+ 
+  </ul>
+</nav>
+
+
+    <h1> Cake & Pastry</h1>
+
+    <div class="menu-container">
+      <!-- Card 1 -->
+      <div class="menu-card">
+          <img src="./media/cakes/1.jpeg" alt="Chocolate Cake">
+          <div class="menu-card-content">
+              <h3>Chocolate Cake</h3>
+              <p>A rich and moist chocolate cake topped with creamy chocolate frosting.</p>
+              <span>₹350</span>
+          </div>
+          <div class="menu-card-buttons">
+              <button class="btn" onclick="addToCart('Chocolate Cake')">Add to Cart</button>
+              <button class="btn" onclick="orderNow('Chocolate Cake')">Order Now</button>
+          </div>
+      </div>
+  
+      <!-- Card 2 -->
+      <div class="menu-card">
+          <img src="./media/cakes/2.jpeg" alt="Vanilla Cake">
+          <div class="menu-card-content">
+              <h3>Vanilla Cake</h3>
+              <p>A classic vanilla sponge cake layered with smooth vanilla cream.</p>
+              <span>₹300</span>
+          </div>
+          <div class="menu-card-buttons">
+              <button class="btn" onclick="addToCart('Vanilla Cake')">Add to Cart</button>
+              <button class="btn" onclick="orderNow('Vanilla Cake')">Order Now</button>
+          </div>
+      </div>
+  
+      <!-- Card 3 -->
+      <div class="menu-card">
+          <img src="./media/cakes/3.jpeg" alt="Red Velvet Cake">
+          <div class="menu-card-content">
+              <h3>Red Velvet Cake</h3>
+              <p>A soft and vibrant red velvet cake with layers of cream cheese frosting.</p>
+              <span>₹400</span>
+          </div>
+          <div class="menu-card-buttons">
+              <button class="btn" onclick="addToCart('Red Velvet Cake')">Add to Cart</button>
+              <button class="btn" onclick="orderNow('Red Velvet Cake')">Order Now</button>
+          </div>
+      </div>
+  
+      <!-- Card 4 -->
+      <div class="menu-card">
+          <img src="./media/cakes/4.jpeg" alt="Black Forest Cake">
+          <div class="menu-card-content">
+              <h3>Black Forest Cake</h3>
+              <p>A delightful combination of chocolate, cherries, and whipped cream.</p>
+              <span>₹450</span>
+          </div>
+          <div class="menu-card-buttons">
+              <button class="btn" onclick="addToCart('Black Forest Cake')">Add to Cart</button>
+              <button class="btn" onclick="orderNow('Black Forest Cake')">Order Now</button>
+          </div>
+      </div>
+  
+      <!-- Card 5 -->
+      <div class="menu-card">
+          <img src="./media/cakes/5.jpeg" alt="Blueberry Pastry">
+          <div class="menu-card-content">
+              <h3>Blueberry Pastry</h3>
+              <p>A light and fluffy pastry filled with blueberry compote and cream.</p>
+              <span>₹150</span>
+          </div>
+          <div class="menu-card-buttons">
+              <button class="btn" onclick="addToCart('Blueberry Pastry')">Add to Cart</button>
+              <button class="btn" onclick="orderNow('Blueberry Pastry')">Order Now</button>
+          </div>
+      </div>
+  
+      <!-- Card 6 -->
+      <div class="menu-card">
+          <img src="./media/cakes/6.jpeg" alt="Strawberry Pastry">
+          <div class="menu-card-content">
+              <h3>Strawberry Pastry</h3>
+              <p>A delicious pastry layered with fresh strawberries and whipped cream.</p>
+              <span>₹150</span>
+          </div>
+          <div class="menu-card-buttons">
+              <button class="btn" onclick="addToCart('Strawberry Pastry')">Add to Cart</button>
+              <button class="btn" onclick="orderNow('Strawberry Pastry')">Order Now</button>
+          </div>
+      </div>
+  </div>
+
+    <script>
+        function addToCart(item) {
+            alert(item + " has been added to your cart.");
+        }
+
+        function orderNow(item) {
+            alert("Your " + item + " order has been placed!");
+        }
+    </script>
+
+
+<!-- footer -->
+
+<footer>
+    <div class="container">
+      <div class="sec aboutus">
+        <h2>About-us</h2>
+        <p><i> <q>Your cozy corner for freshly brewed coffee and delightful treats. </q></i></p>
+        <ul class="sci">
+          <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+          <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+          <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></i></a></li>
+        </ul>
+      </div>
+  
+      <div class="sec quickLinks">
+        <h2>Quick Links</h2>
+        <ul>
+          <li><a href="#">Home </a></li>
+          <li><a href="#">About-us</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Privacy policy</a></li>
+        </ul>
+      </div>
+  
+      <div class="sec contact">
+        <h2>Contact Info</h2>
+        <ul class="info">
+          <li>
+            <span><i class="fa fa-phone" aria-hidden="true"></i></span>
+            <p><a href="#">9999999999</a></p>
+          </li>
+          <li>
+            <span><i class="fa fa-envelope" aria-hidden="true"></i></span>
+            <span>support@cafe.com</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  
+  <div class="copyright">
+    <p>copyright <i class="fa fa-copyright" aria-hidden="true"></i> 2024 Vipul Belhekar. All Rights Reserved.</p>
+  </div>
+  
+  
+</body>
+
+</html>

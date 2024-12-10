@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Menu</title>
+    <link rel="stylesheet" href="./style/menu.css">
+    <link rel="icon" href="./media/cover.jpg" >
+      <!-- FontAwesome CDN LINk -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./style/nav.css">
+  <link rel="stylesheet" href="./style/footer.css">
+ 
+    
+</head>
+
+<body>
+
+ <!-- Navbar -->
+ <nav class="navbar">
+  <div class="logo">
+    <a href="index.html"><i class="fas fa-mug-hot fa-5x"></i> MHJ Cafe</a>
+  </div>
+
+  <!-- Navigation Links -->
+  <ul class="nav-links">
+    <li><a href="index.html" > Home</a></li>
+    <li class="dropdown ">
+      <a href="#">Category</a>
+      <ul class="dropdown-menu">
+        <li class="active"><a href="./Brevarages.html"><i class="fas fa-coffee"></i> Beverages</a></li>
+        <li><a href="./breads.html"><i class="fas fa-bread-slice"></i> Breads</a></li>
+        <li><a href="./icecream.html"><i class="fas fa-ice-cream"></i> Ice Creams</a></li>
+        <li><a href="./cake.html"><i class="fas fa-birthday-cake"></i> Cakes</a></li>
+      </ul>
+
+    </li>
+    <li ><a href="./about.html"> About-us</a></li>
+    <li ><a href="./contact.html"> Contact-us</a></li>
+ 
+  </ul>
+</nav>
+
+    <h1> Coffee</h1>
+
+    <div class="menu-container">
+      <!-- Card 1 -->
+      <div class="menu-card">
+          <img src="./media/brevarages/1.jpeg" alt="Cold Coffee">
+          <div class="menu-card-content">
+              <h3>Cold Coffee</h3>
+              <p>A chilled and creamy coffee, blended to perfection with ice.</p>
+              <span>₹120</span>
+          </div>
+          <div class="menu-card-buttons">
+              <button class="btn" onclick="addToCart('Cold Coffee')">Add to Cart</button>
+              <button class="btn" onclick="orderNow('Cold Coffee')">Order Now</button>
+          </div>
+      </div>
+  
+      <!-- Card 2 -->
+      <div class="menu-card">
+          <img src="./media/brevarages/2.jpeg" alt="Iced Mocha">
+          <div class="menu-card-content">
+              <h3>Iced Mocha</h3>
+              <p>A delightful blend of coffee, chocolate, and chilled milk.</p>
+              <span>₹150</span>
+          </div>
+          <div class="menu-card-buttons">
+              <button class="btn" onclick="addToCart('Iced Mocha')">Add to Cart</button>
+              <button class="btn" onclick="orderNow('Iced Mocha')">Order Now</button>
+          </div>
+      </div>
+  
+      <!-- Card 3 -->
+      <div class="menu-card">
+          <img src="./media/brevarages/3.jpeg" alt="Vanilla Milkshake">
+          <div class="menu-card-content">
+              <h3>Vanilla Milkshake</h3>
+              <p>A creamy and smooth milkshake with the richness of vanilla.</p>
+              <span>₹130</span>
+          </div>
+          <div class="menu-card-buttons">
+              <button class="btn" onclick="addToCart('Vanilla Milkshake')">Add to Cart</button>
+              <button class="btn" onclick="orderNow('Vanilla Milkshake')">Order Now</button>
+          </div>
+      </div>
+  
+      <!-- Card 4 -->
+      <div class="menu-card">
+          <img src="./media/brevarages/4.jpeg" alt="Lemon Iced Tea">
+          <div class="menu-card-content">
+              <h3>Lemon Iced Tea</h3>
+              <p>A refreshing drink made with black tea and zesty lemon flavor.</p>
+              <span>₹100</span>
+          </div>
+          <div class="menu-card-buttons">
+              <button class="btn" onclick="addToCart('Lemon Iced Tea')">Add to Cart</button>
+              <button class="btn" onclick="orderNow('Lemon Iced Tea')">Order Now</button>
+          </div>
+      </div>
+  
+      <!-- Card 5 -->
+      <div class="menu-card">
+          <img src="./media/brevarages/5.jpeg" alt="Caramel Frappuccino">
+          <div class="menu-card-content">
+              <h3>Caramel Frappuccino</h3>
+              <p>A creamy coffee-based frappé topped with whipped cream and caramel syrup.</p>
+              <span>₹180</span>
+          </div>
+          <div class="menu-card-buttons">
+              <button class="btn" onclick="addToCart('Caramel Frappuccino')">Add to Cart</button>
+              <button class="btn" onclick="orderNow('Caramel Frappuccino')">Order Now</button>
+          </div>
+      </div>
+  
+      <!-- Card 6 -->
+      <div class="menu-card">
+          <img src="./media/brevarages/6.jpeg" alt="Strawberry Smoothie">
+          <div class="menu-card-content">
+              <h3>Strawberry Smoothie</h3>
+              <p>A refreshing blend of strawberries, yogurt, and a hint of sweetness.</p>
+              <span>₹140</span>
+          </div>
+          <div class="menu-card-buttons">
+              <button class="btn" onclick="addToCart('Strawberry Smoothie')">Add to Cart</button>
+              <button class="btn" onclick="orderNow('Strawberry Smoothie')">Order Now</button>
+          </div>
+      </div>
+  </div>
+  
+  <script>
+      function addToCart(item) {
+          alert(item + " has been added to your cart.");
+      }
+  
+      function orderNow(item) {
+          alert("Your " + item + " order has been placed!");
+      }
+  </script>
+  
+
+    <script>
+        function addToCart(item) {
+            alert(item + " has been added to your cart.");
+        }
+
+        function orderNow(item) {
+            alert("Your " + item + " order has been placed!");
+        }
+    </script>
+
+
+<!-- footer -->
+
+<footer>
+    <div class="container">
+      <div class="sec aboutus">
+        <h2>About-us</h2>
+        <p><i> <q>Your cozy corner for freshly brewed coffee and delightful treats. </q></i></p>
+        <ul class="sci">
+          <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+          <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+          <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></i></a></li>
+        </ul>
+      </div>
+  
+      <div class="sec quickLinks">
+        <h2>Quick Links</h2>
+        <ul>
+          <li><a href="#">Home </a></li>
+          <li><a href="#">About-us</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Privacy policy</a></li>
+        </ul>
+      </div>
+  
+      <div class="sec contact">
+        <h2>Contact Info</h2>
+        <ul class="info">
+          <li>
+            <span><i class="fa fa-phone" aria-hidden="true"></i></span>
+            <p><a href="#">9999999999</a></p>
+          </li>
+          <li>
+            <span><i class="fa fa-envelope" aria-hidden="true"></i></span>
+            <span>support@cafe.com</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  
+  <div class="copyright">
+    <p>copyright <i class="fa fa-copyright" aria-hidden="true"></i> 2024 Vipul Belhekar. All Rights Reserved.</p>
+  </div>
+  
+  
+</body>
+
+</html>

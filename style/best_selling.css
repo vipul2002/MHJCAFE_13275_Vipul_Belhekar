@@ -1,0 +1,87 @@
+/* body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fafafa;
+} */
+
+.best-sellers {
+    text-align: center;
+    padding: 20px;
+    background-color: #f8f9fa;
+
+}
+
+.best-sellers h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.slider1 {
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    border: 2px solid #ddd;
+    border-radius: 20px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.slides1 {
+    display: flex;
+    animation: auto-scroll 12s linear infinite;
+}
+
+.item1 {
+    flex: 0 0 33.33%;
+    box-sizing: border-box;
+    padding: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.item1 img {
+    width: 100%;
+    height: 300px;
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.item1 p {
+    font-size: 1.3rem;
+    margin-top: 15px;
+    color: #333;
+    font-weight: bold;
+    text-transform: capitalize;
+    text-align: center;
+    transition: color 0.3s ease;
+}
+
+/* Hover Effects */
+.item1:hover {
+    transform: scale(1.05);
+}
+
+.item1:hover img {
+    transform: scale(1.1);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.item1:hover p {
+    color: #e74c3c;
+}
+
+/* Keyframes for Auto-Scroll */
+@keyframes auto-scroll {
+    0% {
+        transform: translateX(10);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}

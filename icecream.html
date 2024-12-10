@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ice Creams Menu</title>
+    <link rel="icon" href="./media/cover.jpg" >
+    <link rel="stylesheet" href="./style/menu.css">
+      <!-- FontAwesome CDN LINk -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./style/nav.css">
+  <link rel="stylesheet" href="./style/footer.css">
+ 
+    
+</head>
+
+<body>
+   <!-- Navbar -->
+ <nav class="navbar">
+  <div class="logo">
+    <a href="index.html"><i class="fas fa-mug-hot fa-5x"></i> MHJ Cafe</a>
+  </div>
+
+  <!-- Navigation Links -->
+  <ul class="nav-links">
+    <li><a href="index.html" > Home</a></li>
+    <li class="dropdown ">
+      <a href="#">Category</a>
+      <ul class="dropdown-menu">
+        <li><a href="./Brevarages.html"><i class="fas fa-coffee"></i> Beverages</a></li>
+        <li><a href="./breads.html"><i class="fas fa-bread-slice"></i> Breads</a></li>
+        <li class="active"><a href="./icecream.html"><i class="fas fa-ice-cream"></i> Ice Creams</a></li>
+        <li><a href="./cake.html"><i class="fas fa-birthday-cake"></i> Cakes</a></li>
+      </ul>
+
+    </li>
+    <li ><a href="./about.html"> About-us</a></li>
+    <li ><a href="./contact.html"> Contact-us</a></li>
+ 
+  </ul>
+</nav>
+
+
+    <h1> Ice Creams</h1>
+
+    <div class="menu-container">
+      <!-- Card 1 -->
+      <div class="menu-card">
+          <img src="./media/icecram/1.jpeg" alt="Vanilla Ice Cream">
+          <div class="menu-card-content">
+              <h3>Vanilla Ice Cream</h3>
+              <p>Classic and creamy vanilla ice cream made with fresh ingredients.</p>
+              <span>₹100</span>
+          </div>
+          <div class="menu-card-buttons">
+              <button class="btn" onclick="addToCart('Vanilla Ice Cream')">Add to Cart</button>
+              <button class="btn" onclick="orderNow('Vanilla Ice Cream')">Order Now</button>
+          </div>
+      </div>
+  
+      <!-- Card 2 -->
+      <div class="menu-card">
+          <img src="./media/icecram/2.jpeg" alt="Chocolate Ice Cream">
+          <div class="menu-card-content">
+              <h3>Chocolate Ice Cream</h3>
+              <p>Rich and indulgent chocolate ice cream for all chocolate lovers.</p>
+              <span>₹120</span>
+          </div>
+          <div class="menu-card-buttons">
+              <button class="btn" onclick="addToCart('Chocolate Ice Cream')">Add to Cart</button>
+              <button class="btn" onclick="orderNow('Chocolate Ice Cream')">Order Now</button>
+          </div>
+      </div>
+  
+      <!-- Card 3 -->
+      <div class="menu-card">
+          <img src="./media/icecram/3.jpeg" alt="Strawberry Ice Cream">
+          <div class="menu-card-content">
+              <h3>Strawberry Ice Cream</h3>
+              <p>Fresh and fruity strawberry ice cream with real strawberry chunks.</p>
+              <span>₹130</span>
+          </div>
+          <div class="menu-card-buttons">
+              <button class="btn" onclick="addToCart('Strawberry Ice Cream')">Add to Cart</button>
+              <button class="btn" onclick="orderNow('Strawberry Ice Cream')">Order Now</button>
+          </div>
+      </div>
+  
+      <!-- Card 4 -->
+      <div class="menu-card">
+          <img src="./media/icecram/4.jpg" alt="Mango Ice Cream">
+          <div class="menu-card-content">
+              <h3>Mango Ice Cream</h3>
+              <p>Tropical mango ice cream made with real mangoes for a refreshing treat.</p>
+              <span>₹140</span>
+          </div>
+          <div class="menu-card-buttons">
+              <button class="btn" onclick="addToCart('Mango Ice Cream')">Add to Cart</button>
+              <button class="btn" onclick="orderNow('Mango Ice Cream')">Order Now</button>
+          </div>
+      </div>
+  
+      <!-- Card 5 -->
+      <div class="menu-card">
+          <img src="./media/icecram/5.jpeg" alt="Pistachio Ice Cream">
+          <div class="menu-card-content">
+              <h3>Pistachio Ice Cream</h3>
+              <p>Creamy pistachio ice cream with a nutty and satisfying flavor.</p>
+              <span>₹150</span>
+          </div>
+          <div class="menu-card-buttons">
+              <button class="btn" onclick="addToCart('Pistachio Ice Cream')">Add to Cart</button>
+              <button class="btn" onclick="orderNow('Pistachio Ice Cream')">Order Now</button>
+          </div>
+      </div>
+  
+      <!-- Card 6 -->
+      <div class="menu-card">
+          <img src="./media/icecram/6.jpeg" alt="Cookies and Cream Ice Cream">
+          <div class="menu-card-content">
+              <h3>Cookies and Cream Ice Cream</h3>
+              <p>Delicious ice cream with chunks of cookies in a creamy base.</p>
+              <span>₹160</span>
+          </div>
+          <div class="menu-card-buttons">
+              <button class="btn" onclick="addToCart('Cookies and Cream Ice Cream')">Add to Cart</button>
+              <button class="btn" onclick="orderNow('Cookies and Cream Ice Cream')">Order Now</button>
+          </div>
+      </div>
+  </div>
+
+    <script>
+        function addToCart(item) {
+            alert(item + " has been added to your cart.");
+        }
+
+        function orderNow(item) {
+            alert("Your " + item + " order has been placed!");
+        }
+    </script>
+
+
+<!-- footer -->
+
+<footer>
+    <div class="container">
+      <div class="sec aboutus">
+        <h2>About-us</h2>
+        <p><i> <q>Your cozy corner for freshly brewed coffee and delightful treats. </q></i></p>
+        <ul class="sci">
+          <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+          <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+          <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></i></a></li>
+        </ul>
+      </div>
+  
+      <div class="sec quickLinks">
+        <h2>Quick Links</h2>
+        <ul>
+          <li><a href="#">Home </a></li>
+          <li><a href="#">About-us</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Privacy policy</a></li>
+        </ul>
+      </div>
+  
+      <div class="sec contact">
+        <h2>Contact Info</h2>
+        <ul class="info">
+          <li>
+            <span><i class="fa fa-phone" aria-hidden="true"></i></span>
+            <p><a href="#">9999999999</a></p>
+          </li>
+          <li>
+            <span><i class="fa fa-envelope" aria-hidden="true"></i></span>
+            <span>support@cafe.com</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  
+  <div class="copyright">
+    <p>copyright <i class="fa fa-copyright" aria-hidden="true"></i> 2024 Vipul Belhekar. All Rights Reserved.</p>
+  </div>
+  
+  
+</body>
+
+</html>
